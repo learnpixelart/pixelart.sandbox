@@ -21,9 +21,9 @@
     theme = select( "Select your theme", ["Starter", "Bootstrap", "Minimal"] )
 
 
-todo: use alternative names for select ?? e.g. choice, pick, ??
-todo: return index (key) e.g. 1 or return string (value) e.g. "Starter" or both [1, "Starter" ]??
-
+todos: 
+- use alternative names for select ?? e.g. choice, pick, ??
+- return index (key) e.g. 1 or return string (value) e.g. "Starter" or both [1, "Starter" ]??
 
 
 #### theme( key | title )
