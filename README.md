@@ -1,7 +1,65 @@
 # Mr. Hyde's Scripts - Add Your Script!
 
+Example - `starter.rb`:`
 
-### Mini Language
+```ruby
+###############################################
+# Mr. Hyde's Quick Start Static Site Script
+
+say "Welcome, before setting up your site Mr. Hyde will ask you some questions."
+
+title = ask "What's your site's title?", "Your Site Title"
+
+name  = ask "What's your name?", "Henry Jekyll"
+
+theme = select "Select your theme", ["Starter", "Bootstrap", "Minimal"]
+
+say "Thanks! Ready-to-go. Stand back."
+
+install_theme theme
+
+config do |c|
+  c.title        = title
+  c.author.name  = name
+  
+  c.mrhyde.last_updated = Time.now
+  c.mrhyde.title        = title
+  c.mrhyde.name         = name
+  c.mrhyde.theme        = theme
+end
+
+say "Done."
+```
+
+Run the script. Type in your shell:
+
+```
+$ mrhyde starter
+```
+
+Resulting in:
+
+```
+>> Welcome, before setting up your site Mr. Hyde will ask you some questions.
+>> Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
+>> Q: What's your name? [Henry Jekyll]: Edward Hyde
+>>    1 - Starter
+>>    2 - Bootstrap
+>>    3 - Minimal
+>> Q: Select your theme 1-3 [1]: 2
+>> Thanks! Ready-to-go. Stand back.
+>>   Downloading Dr. Jekyll's Bootstrap Theme...
+>>   Setting up Dr. Jeykll's Bootstrap Theme..
+>>   ...
+>>   Updating settings in _config.yml...
+>>     title: "Another Beautiful Static Site"
+>>     author.name: "Edward Hyde"
+>>   ...
+>> Done.
+```
+
+
+### Mini Language Reference
 
 
 #### say( text )
@@ -26,11 +84,14 @@ todos:
 - return index (key) e.g. 1 or return string (value) e.g. "Starter" or both [1, "Starter" ]??
 
 
-#### theme( key | title )
+#### install_theme( key | title )
 
 download and setup (unzip/unpack) theme
 
-    theme( 'starter' )
+    install_theme( 'starter' )
+
+todos:
+- just use theme ?  (conflict with variable theme ?)
 
 
 #### config block
