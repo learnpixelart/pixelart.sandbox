@@ -43,10 +43,11 @@ Resulting in:
 >> Welcome, before setting up your site Mr. Hyde will ask you some questions.
 >> Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
 >> Q: What's your name? [Henry Jekyll]: Edward Hyde
->>    1 - Starter
->>    2 - Bootstrap
->>    3 - Minimal
->> Q: Select your theme 1-3 [1]: 2
+>> Q: Select your theme:
+>>     1 - Starter
+>>     2 - Bootstrap
+>>     3 - Minimal
+>>    Your choice (1-3)? [1]: 2 
 >> Thanks! Ready-to-go. Stand back.
 >>   Downloading Dr. Jekyll's Bootstrap Theme...
 >>   Setting up Dr. Jeykll's Bootstrap Theme..
@@ -64,20 +65,27 @@ Resulting in:
 
 #### say( text )
 
-    say( "Welcome" )
+```ruby
+say( "Welcome" )
+```
 
 #### ask(question, [default])
 
-    title = ask( "What do you want to call your site?" )
+```ruby
+title = ask( "What do you want to call your site?" )
+```
 
 #### yes?(question, [default]) or no?(question, [default])
 
-    puts "yes, sir"   if yes?( "Add analytics?" )
+```ruby
+puts "yes, sir"   if yes?( "Add analytics?" )
+```
 
 #### select( question, choices, [default] )
 
-    theme = select( "Select your theme", ["Starter", "Bootstrap", "Minimal"] )
-
+```ruby
+theme = select( "Select your theme", ["Starter", "Bootstrap", "Minimal"] )
+```
 
 todos: 
 - use alternative names for select ?? e.g. choice, pick, ??
@@ -88,7 +96,9 @@ todos:
 
 download and setup (unzip/unpack) theme
 
-    install_theme( 'starter' )
+```ruby
+install_theme( 'starter' )
+```
 
 todos:
 - just use theme ?  (conflict with variable theme ?)
@@ -98,14 +108,16 @@ todos:
 
 update _config.yml settings
 
-    config do |c|
-      c.title        = "Your Site Title"
-      c.author.name  = "Your Name"
-      c.author.email = "henry@example.com"
+```ruby
+config do |c|
+  c.title        = "Your Site Title"
+  c.author.name  = "Your Name"
+  c.author.email = "henry@example.com"
       
-      c.mrhyde.title        = title
-      c.mrhyde.last_updated = Time.now
-    end
+  c.mrhyde.title        = title
+  c.mrhyde.last_updated = Time.now
+end
+```
 
 
 
