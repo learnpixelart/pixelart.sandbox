@@ -37,7 +37,7 @@ That's it.
 ## Write Your Own Mr Hyde Script
 
 
-### Example - `starter.rb`:`
+### Example - `starter.rb`:
 
 ```ruby
 ###############################################
