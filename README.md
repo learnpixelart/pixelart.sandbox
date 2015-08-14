@@ -90,7 +90,7 @@ title = ask( "What do you want to call your site?" )
 puts "yes, sir"   if yes?( "Add analytics?" )
 ```
 
-#### select( question, choices, [default] )
+#### select( title, choices, [default] )
 
 ```ruby
 theme = select( "Select your theme", ["Starter", "Bootstrap", "Minimal"] )
