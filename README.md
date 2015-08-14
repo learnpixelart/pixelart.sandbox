@@ -45,9 +45,9 @@ Example - `starter.rb`:
 
 say "Welcome, before setting up your site Mr. Hyde will ask you some questions."
 
-title = ask "What's your site's title?", "Your Site Title"
+title = ask "What's your site's title", "Your Site Title"
 
-name  = ask "What's your name?", "Henry Jekyll"
+name  = ask "What's your name", "Henry Jekyll"
 
 theme = select "Select your theme", ["Starter", "Bootstrap", "Minimal"]
 
@@ -81,13 +81,13 @@ say( "Welcome" )
 #### ask(question, [default])
 
 ```ruby
-title = ask( "What do you want to call your site?" )
+title = ask( "What do you want to call your site" )
 ```
 
 #### yes?(question, [default]) or no?(question, [default])
 
 ```ruby
-puts "yes, sir"   if yes?( "Add analytics?" )
+puts "yes, sir"   if yes?( "Add analytics" )
 ```
 
 #### select( title, choices, [default] )
