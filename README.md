@@ -1,6 +1,43 @@
 # Mr. Hyde's Scripts - Add Your Script!
 
-Example - `starter.rb`:`
+
+## Usage
+
+Type in your shell:
+
+```
+$ mrhyde new starter
+```
+
+Resulting in:
+
+```
+>> Welcome, before setting up your site Mr. Hyde will ask you some questions.
+>> Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
+>> Q: What's your name? [Henry Jekyll]: Edward Hyde
+>> Q: Select your theme:
+>>     1 - Starter
+>>     2 - Bootstrap
+>>     3 - Minimal
+>>    Your choice (1-3)? [1]: 2 
+>> Thanks! Ready-to-go. Stand back.
+>>   Downloading Dr. Jekyll's Bootstrap Theme...
+>>   Setting up Dr. Jeykll's Bootstrap Theme..
+>>   ...
+>>   Updating settings in _config.yml...
+>>     title: "Another Beautiful Static Site"
+>>     author.name: "Edward Hyde"
+>>   ...
+>> Done.
+```
+
+That's it. 
+
+
+## Write Your Own Mr Hyde Script
+
+
+### Example - `starter.rb`:`
 
 ```ruby
 ###############################################
@@ -29,34 +66,6 @@ config do |c|
 end
 
 say "Done."
-```
-
-Run the script. Type in your shell:
-
-```
-$ mrhyde starter
-```
-
-Resulting in:
-
-```
->> Welcome, before setting up your site Mr. Hyde will ask you some questions.
->> Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
->> Q: What's your name? [Henry Jekyll]: Edward Hyde
->> Q: Select your theme:
->>     1 - Starter
->>     2 - Bootstrap
->>     3 - Minimal
->>    Your choice (1-3)? [1]: 2 
->> Thanks! Ready-to-go. Stand back.
->>   Downloading Dr. Jekyll's Bootstrap Theme...
->>   Setting up Dr. Jeykll's Bootstrap Theme..
->>   ...
->>   Updating settings in _config.yml...
->>     title: "Another Beautiful Static Site"
->>     author.name: "Edward Hyde"
->>   ...
->> Done.
 ```
 
 
