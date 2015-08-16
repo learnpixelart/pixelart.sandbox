@@ -12,26 +12,37 @@ $ mrhyde new starter
 Resulting in:
 
 ```
->> Welcome, before setting up your site Mr. Hyde will ask you some questions.
->> Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
->> Q: What's your name? [Henry Jekyll]: Edward Hyde
->> Q: Select your theme:
->>     1 - Starter
->>     2 - Bootstrap
->>     3 - Minimal
->>    Your choice (1-3)? [1]: 2 
->> Thanks! Ready-to-go. Stand back.
->>   Downloading Dr. Jekyll's Bootstrap Theme...
->>   Setting up Dr. Jeykll's Bootstrap Theme..
->>   ...
->>   Updating settings in _config.yml...
->>     title: "Another Beautiful Static Site"
->>     author.name: "Edward Hyde"
->>   ...
->> Done.
+Welcome, before setting up your site Mr. Hyde will ask you some questions.
+
+Q: What's your site's title? [Your Site Title]:  Another Beautiful Static Site
+Q: What's your name? [Henry Jekyll]: Edward Hyde
+Q: Select your theme:
+    1 - Starter
+    2 - Bootstrap
+    3 - Minimal
+   Your choice (1-3)? [1]: 2 
+
+Thanks! Ready-to-go. Stand back.
+
+  Downloading Dr. Jekyll's Bootstrap Theme...
+  Setting up Dr. Jeykll's Bootstrap Theme..
+  ...
+  Updating settings in _config.yml...
+    title: "Another Beautiful Static Site"
+    author.name: "Edward Hyde"
+  ...
+Done.
 ```
 
-That's it. 
+That's it. Now use:
+
+```
+$ cd starter
+$ jekyll serve
+```
+
+And open up your new static site in your browser.
+
 
 
 ## Write Your Own Mr Hyde Script
@@ -96,11 +107,6 @@ puts "yes, sir"   if yes?( "Add analytics" )
 theme = select( "Select your theme", ["Starter", "Bootstrap", "Minimal"] )
 ```
 
-todos: 
-- use alternative names for select ?? e.g. choice, pick, ??
-- return index (key) e.g. 1 or return string (value) e.g. "Starter" or both [1, "Starter" ]??
-
-
 #### install_theme( key | title )
 
 download and setup (unzip/unpack) theme
@@ -108,9 +114,6 @@ download and setup (unzip/unpack) theme
 ```ruby
 install_theme( 'starter' )
 ```
-
-todos:
-- just use theme ?  (conflict with variable theme ?)
 
 
 #### config block
