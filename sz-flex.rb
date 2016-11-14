@@ -12,7 +12,7 @@ name  = ask "What's your name", "StartZeroGnu"
 
 say "Thanks! Ready-to-go. Stand back."
 
-install_theme "szflexblog"
+install_theme "szflex"
 
 config do |c|
   c.title        = title
