@@ -1,0 +1,18 @@
+#####
+# exclude all tmp directories  - check if /tmp/ or /tmp works - is right syntax - why? why not?
+tmp/
+tmp2/
+tmp3/
+tmpxxx/
+
+
+####
+# add output (used for testing)
+dl/
+o/
+o1/
+o2/
+o3/
+o4/
+
+
