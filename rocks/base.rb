@@ -41,6 +41,8 @@ ATTRIBUTES = {
    'alien',
    'deathbot',
    'safemode',
+   'pink',
+   'zombie',
   ],
    eyes: [
   '3dglasses',
@@ -64,6 +66,8 @@ ATTRIBUTES = {
   'lasereyes-green',
   'lasereyes-red',
   'vr',
+  'eyes-left-blue',
+  'eyes-big-blue',
    ],
    accessories: [
   'bandana',
@@ -74,6 +78,7 @@ ATTRIBUTES = {
   'knittedcap2',
   'tophat',
   'cap',
+  'cap-mcb',
   'cap-mcd',
   'cap-burgerking',
   'cap-subway',
@@ -97,6 +102,7 @@ ATTRIBUTES = {
       'wildhair-blonde',
       'wildhair-red',
       'wildhair-white',
+      'bob-blonde',
    ],
 }.reduce( {} ) do |h,(category, names)| 
      names.each do |name|
