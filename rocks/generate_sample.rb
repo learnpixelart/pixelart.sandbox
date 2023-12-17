@@ -15,6 +15,7 @@ specs = parse_data( <<DATA )
  brown, eyes-left
  dark, eyes-left
  demon, eyes-demon
+ golden-block, eyes-left
  golden, eyes-left
  pink, eyes-left-blue
  gray-block, eyes-left
@@ -34,6 +35,7 @@ specs = parse_data( <<DATA )
  brown, eyes-left, vr, mohawk2
  dark, eyes-left, vr, mohawk2-green
  demon, eyes-demon, vr, halo
+ golden-block, eyes-left, vr
  golden, eyes-left, vr, crown
  pink, bob-blonde, eyes-left-blue, vr  
  gray-block, eyes-left, vr
@@ -52,8 +54,9 @@ specs = parse_data( <<DATA )
  default, eyes-big, headband
  albino, eyes-blend, cap
  brown, eyes-blue, bandana
- dark, eyes-zombie, cap mcb
- demon, eyes-cool, cap mcd
+ dark, eyes-zombie, cap mcd red
+ demon, eyes-cool, cap mcd black
+ golden-block, eyes-rainbow
  golden, eyes-rainbow, crown
  pink, wildhair-blonde, eyes-cool  
  gray-block, eyes-pepe
@@ -61,12 +64,38 @@ specs = parse_data( <<DATA )
  green, lasereyes gold, cap burgerking
  memepool, eyes-big, knittedcap2
  pepe, eyes-red, cap mcb
- alien, eyes-blue, headband
+ alien, eyes-blue, cap mcd white
  deathbot, 3dglasses, cowboyhat
  safemode, eyes-bored, bandana2
  zombie,  eyes-red,  bandana
 
+ maxibiz, maxibiz lasereyes red
+ maxibiz, maxibiz lasereyes green
+ maxibiz, maxibiz lasereyes blue
 
+ black, maxibiz lasereyes red
+ black, maxibiz lasereyes green
+ black, maxibiz lasereyes blue
+
+ default, maxibiz lasereyes red
+ default, maxibiz lasereyes green
+ default, maxibiz lasereyes blue
+
+ maxibiz,  cap mcb, maxibiz lasereyes red
+ maxibiz, cowboyhat, maxibiz lasereyes green
+ maxibiz, bandana, maxibiz lasereyes blue
+
+ black,  cap mcd red, maxibiz lasereyes red
+ black, knitted cap, maxibiz lasereyes green
+ black, crown, maxibiz lasereyes blue
+
+ golden, maxibiz lasereyes red
+ golden, maxibiz lasereyes green
+ golden, maxibiz lasereyes blue
+
+ golden-block, maxibiz lasereyes red
+ golden-block, maxibiz lasereyes green
+ golden-block, maxibiz lasereyes blue
 DATA
 
 
