@@ -13,9 +13,7 @@ specs = parse_data( <<DATA )
   alien, eyes right, cap ordinal
   alien, 3d glasses, mohawk purple
   alien, eyes big, bandana
-DATA
 
-=begin
   # monke kings
   golden, eyes right, crown
   golden, 3d glasses, crown
@@ -24,16 +22,35 @@ DATA
   golden, eyes zombie, crown
   golden, shades polarized, crown
 
-
+  # more
   orange orc, hoodie orange, laser eyes red 
   
    gray, hoodie purple, 3d glasses
    deathbot, eyes deathbot, hoodie orange
-=end
+
+   brown, eyes pepe, flathat
+   pink,  eyes big, frenchcap
+
+   gray,  eyes bot
+   gray,  eyes bot green, mohawk
+
+   greener orc, eyes bot green, mohawk
+
+   orange orc, eyes left, knitted cap
+   orange orc, eyes left, knitted cap 2
+
+   alien, eyes big, bandana 2 
+
+   greener orc, eyes bot green, cap army
+   brown, eyes left, cap
+
+   pepe, eyes pepe, cowboy hat
+   deathbot, eyes deathbot, halo
+DATA
 
 
 
-cols = 3
+cols = 10
 rows = specs.size / cols 
 rows += 1    if specs.size % cols != 0
 
