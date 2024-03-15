@@ -17,6 +17,18 @@ and a pop art ("more is more") tableau in 2x
 
 
 
+# Choose Rich 
+
+The choose rich meme incl. O.G. Nick (O'Neill), Joe (Biden) 
+and Donald (Trump). 
+
+![](chooserich/i/chooserich@4x.png)
+
+
+
+
+
+
 
 # Questions? Comments?
 
