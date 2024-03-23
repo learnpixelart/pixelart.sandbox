@@ -209,33 +209,6 @@ ATTRIBUTES = {
        'wizardhat-white',
        'headband',
   ],
-  maxibiz: [
-   'maxibiz',
-   'maxibiz2',
-   'maxibiz3',
-   'maxibiz4',
-   'maxibiz5',
-   'maxibiz6',
-   'maxibiz-punk',
-   'maxibiz-punk2',
- 
-   '3dglasses-1bit',
-   'bandana-1bit',
-   'bubblegum-1bit',
-   'cap-mcb-1bit',
-   'cap-ordinal-1bit',
-   'cap-terminal-1bit',
-   'cowboyhat-1bit',
-   'eyes-1bit',
-   'flathat-1bit',
-   'knittedcap-1bit',
-   'maxibiz-lasereyes-blue',
-   'maxibiz-lasereyes-green',
-   'maxibiz-lasereyes-red',
-   'maxibiz-lasereyes2-blue',
-   'maxibiz-lasereyes2-green',
-   'maxibiz-lasereyes2-red',
-  ],
 }.reduce( {} ) do |h,(category, names)| 
      names.each do |name|
         key = File.basename( name ).downcase.gsub( /[^a-z0-9]/, '' )
