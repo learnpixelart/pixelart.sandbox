@@ -61,7 +61,7 @@ pp ids
 
 ids.each do |id|
 
-  monke = Image.read( "./tmp/monke#{id}.png")
+  monke = Image.read( "./i/monke#{id}.png")
   coin = mint( monke )
 
 
