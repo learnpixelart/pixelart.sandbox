@@ -32,45 +32,57 @@ specs = parse_data( <<DATA )
     bitmap, knitted cap, lasereyes red (bmp)
 DATA
 
+=begin
+    bitmap, lasereyes red
+    bitmap, lasereyes blue
+    bitmap, lasereyes gold
+ 
+    bitmap, eyes right, hoodie
+    bitmap, eyes right, hoodie orange
+    bitmap, shades polarized
+
+    bitmap, bob blonde small
+    bitmap, eyes bot, earring cross
+    bitmap, 3d glasses
+    bitmap, cap safemode
+    bitmap, cap terminal 2
+=end
 
 
 types = [
   'bitmap',
+  'bitmapii',
   'bitmap2',
+  'bitmap2ii',
+  'bitmap3',
+  'bitmap3ii'
 ]
 
 
 types.each do |type|
+
   cols = 7
   rows = specs.size / cols 
   rows += 1    if specs.size % cols != 0
-
-
- puts "==> #{type}..."
 
  composite = ImageComposite.new( cols, rows, 
                                    width: 28, height: 28 )
 
   specs.each_with_index do |spec, i|
        
-     attribs  = ['background black', type ]
-     attribs += spec[1..-1]
+     attribs = ['background black', type ]
+     attribs+= spec[1..-1]
 
-       num = '%02d' % i
-
-       pp attribs
        img = generate( *attribs )
-       img.save( "./ordzaar/#{type}#{num}.png" )
-       img.zoom(10).save( "./ordzaar/@10x/#{type}#{num}@10x.png" )
-     
-       composite << img
+       img.save( "./tmp/#{type}#{i}.png" )
+     img.zoom(10).save( "./tmp/#{type}#{i}@10x.png" )
+     composite << img
+
   end
 
 
-  composite.save( "./ordzaar/tmp/#{type}.png" )
-  composite.zoom(2).save( "./ordzaar/tmp/#{type}@2x.png" )
-  composite.zoom(4).save( "./ordzaar/tmp/#{type}@4x.png" )
-  composite.zoom(6).save( "./ordzaar/tmp/#{type}@6x.png" )
+  composite.save( "./tmp/#{type}.png" )
+  composite.zoom(4).save( "./tmp/#{type}@4x.png" )
 end
 
 puts "bye"
